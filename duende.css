@@ -1,0 +1,58 @@
+html {
+  font-size: max(3ch, 3vmax + 5vmin);
+  line-height: 1.382;
+}
+
+body {
+  margin: auto;
+  overflow-wrap: anywhere;
+}
+
+:focus {
+  outline: thick double;
+}
+
+article {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 2em;
+  margin: auto;
+}
+
+menu {
+  contain: layout;
+  list-style: circle;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+@media (orientation: portrait) {
+  menu {
+    line-height: 1.618;
+      writing-mode: sideways-rl;
+  }
+}
+
+@media (color) {
+  :root {
+    background: violet;
+    background-image: conic-gradient(plum, orange, hotpink, salmon, violet, plum);
+    color: black;
+  }
+
+  :any-link {
+    color: inherit;
+  }
+
+  ::selection {
+    background: darkviolet;
+    color: powderblue;
+  }
+}
